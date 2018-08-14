@@ -43,6 +43,10 @@ public class ConvertVocal2Angka {
                 System.out.println(arrKal[i] + " => " + arrCon[i]);
                 
         }
+        private static void tampilHasil(String convert) 
+        {
+            System.out.println("Kalimat Alay Angka : " + convert);
+        }
     public static void main(String[] args)
     {
         String identitas = "Salwa Nadira Adzani / X RPL 3 / 34";
@@ -53,6 +57,8 @@ public class ConvertVocal2Angka {
         String convert = vokal2Angka(kalimat);
         
         tampilPerKata(kalimat, convert);
+        
+        tampilHasil(convert);
     }
                  
 }   
