@@ -33,6 +33,16 @@ public class ConvertVocal2Angka {
                 
             return kalimat;
          }
+        private static void tampilPerKata(String kalimat, String convert) 
+        {
+            String[] arrKal = kalimat.split(" ");
+            String[] arrCon = convert.split(" ");
+            
+            for (int i = 0; i < arrKal.length; i++) 
+            
+                System.out.println(arrKal[i] + " => " + arrCon[i]);
+                
+        }
     public static void main(String[] args)
     {
         String identitas = "Salwa Nadira Adzani / X RPL 3 / 34";
@@ -41,6 +51,8 @@ public class ConvertVocal2Angka {
         String kalimat = tampilInput();
         
         String convert = vokal2Angka(kalimat);
+        
+        tampilPerKata(kalimat, convert);
     }
                  
 }   
