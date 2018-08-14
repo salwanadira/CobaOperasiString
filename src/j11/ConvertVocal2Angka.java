@@ -11,11 +11,23 @@ public class ConvertVocal2Angka {
         System.out.println("Identitas :" + identitas);
         System.out.println("\nConvert Kalimat Alay Angka (Vokal Ke Angka)\n");
         
-    }   
+    }  
+    private static String tampilInput() 
+    {
+        Scanner scanner = new Scanner(System.in);
+        
+        System.out.print("Masukkan Kalmat: ");
+        String kalimat = scanner.nextLine();
+        
+        System.out.println("Kalimat Asli : " + kalimat);
+        return kalimat;
+    }
     public static void main(String[] args)
     {
         String identitas = "Salwa Nadira Adzani / X RPL 3 / 34";
         tampilJudul(identitas);
+        
+        String kalimat = tampilInput();
     }
                  
 }   
